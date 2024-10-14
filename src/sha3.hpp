@@ -1,3 +1,8 @@
+#ifdef __cplusplus
+#include <cstddef>
+#else
+#include <stddef.h>
+#endif
 #include "../SHA3IUF/sha3.h"
 
 extern "C" void sha3_Init256(sha3_context*);
